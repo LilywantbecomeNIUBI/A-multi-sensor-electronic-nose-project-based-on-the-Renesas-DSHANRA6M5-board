@@ -1,0 +1,35 @@
+# Build output
+Debug/
+Release/
+build/
+out/
+cmake-build-*/
+
+# Logs
+*.log
+
+# Binary outputs
+*.o
+*.obj
+*.elf
+*.axf
+*.bin
+*.hex
+*.map
+*.d
+*.dep
+
+# IDE / system temp files
+.vscode/
+.idea/
+*.tmp
+*.bak
+*.swp
+Thumbs.db
+.DS_Store
+
+# e2 studio launch files
+*.launch
+
+# Optional: local metadata/cache
+.metadata/
