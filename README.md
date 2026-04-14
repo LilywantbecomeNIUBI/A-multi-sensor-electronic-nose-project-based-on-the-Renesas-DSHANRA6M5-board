@@ -13,8 +13,6 @@
 > - 基于 LVGL 的表情显示界面
 > - 后续将持续补充部署教程与 ChatGPT 辅助开发经验
 
----
-
 ## 1. Project Overview
 
 传统单一气体传感器难以稳定识别复杂气味，而电子鼻的思路是通过**多传感器交叉敏感响应 + 模式识别**完成分类。  
@@ -29,7 +27,6 @@
 
 这些类别也在推理代码中以固定标签形式定义。
 
----
 
 ## 2. Features
 
@@ -41,7 +38,6 @@
 - 使用 **LVGL** 实现识别结果的表情化显示
 - 具备较清晰的模块化软件架构，便于二次开发
 
----
 
 ## 3. Hardware Architecture
 
@@ -59,7 +55,6 @@
 
 在代码中，`sensor_hub` 模块统一组织了 MQ 采样链、状态机、SHT40/SGP40 联合服务与记录结构。
 
----
 
 ## 4. Software Architecture
 
@@ -129,7 +124,6 @@
 
 相关逻辑可见 `face_simple_set_emotion()`。
 
----
 
 ## 5. Sensor Pipeline
 
@@ -146,7 +140,6 @@
 
 `sensor_hub.h` 中明确说明了当前统一采样接口 `SensorHub_SampleOnce()` 用于完成一次完整采样；同时假设外层以 **1 秒周期**调用，以满足 VOC 算法的 **1Hz** 采样要求。
 
----
 
 ## 6. Edge Impulse Deployment
 
@@ -193,7 +186,6 @@
 
 这使得最终输出更适合设备端业务使用。
 
----
 
 ## 7. LVGL Expression UI
 
@@ -217,7 +209,6 @@ UI 设计特点包括：
 
 并使用 LVGL 对象、定时器和标签来构建动态交互。
 
----
 
 ## 8. Repository Structure
 
